@@ -1,16 +1,11 @@
 package com.jp.santander.animal;
 
-public class Cachorro {
+public class Cachorro extends Animal{
 
     static int numeroDeCachorros;//declaração variavel estatica
-    private String nome;
-    private int altura;
-    private double peso;
-    private String estado;
-
-    public Cachorro(){}
 
     public Cachorro(String nome, int altura, double peso){
+        super(nome, altura, peso);
         this.nome = nome;
         this.altura = altura;
         this.peso = peso;
@@ -59,10 +54,6 @@ public class Cachorro {
 
     public void comer(){}
 
-    public void latir(){
-        System.out.println("au au");
-    }
-
     public String pegar(){
         return "Bolinha";
     }
@@ -97,5 +88,10 @@ public class Cachorro {
         return "Cachorro{" +
                 "nome='" + nome + '\'' +
                 '}';
+    }
+
+    @Override
+    public void soar() {
+        System.out.println("AU AU");
     }
 }
