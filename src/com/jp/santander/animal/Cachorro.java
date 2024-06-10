@@ -2,6 +2,7 @@ package com.jp.santander.animal;
 
 public class Cachorro {
 
+    static int numeroDeCachorros;//declaração variavel estatica
     private String nome;
     private int altura;
     private double peso;
@@ -13,6 +14,15 @@ public class Cachorro {
         this.nome = nome;
         this.altura = altura;
         this.peso = peso;
+        numeroDeCachorros++;
+    }
+
+    public static int getNumeroDeCachorros() {
+        return numeroDeCachorros;
+    }
+
+    public static void setNumeroDeCachorros(int numeroDeCachorros) {
+        Cachorro.numeroDeCachorros = numeroDeCachorros;
     }
 
     public String getNome() {
@@ -82,5 +92,10 @@ public class Cachorro {
         return estado;
     }
 
-
+    @Override
+    public String toString() {
+        return "Cachorro{" +
+                "nome='" + nome + '\'' +
+                '}';
+    }
 }
