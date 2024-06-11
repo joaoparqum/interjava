@@ -9,7 +9,7 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
 
         int op;
-        do{
+        do {
             System.out.println("Lista de compras");
             System.out.println("1 - Inserir");
             System.out.println("2 - Listar");
@@ -18,7 +18,7 @@ public class Main {
             System.out.println("Escolha uma opção:");
             op = scanner.nextInt();
 
-            switch(op){
+            switch (op) {
                 case 1:
                     System.out.println("Digite o item a ser inserido: ");
                     String item = scanner.next();
@@ -36,8 +36,10 @@ public class Main {
                     System.out.println("Opção inválida!");
             }
 
-        }while (op != 4);
+        } while (op != 4);
 
         scanner.close();
+
+    }
 
 }
