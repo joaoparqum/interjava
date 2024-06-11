@@ -31,7 +31,7 @@ public class Main {
                     break;
                 case 4:
                     System.out.println("Saindo do programa...");
-                    break:
+                    break;
                 default:
                     System.out.println("Opção inválida!");
             }
