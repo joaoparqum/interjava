@@ -10,11 +10,11 @@ public class Main {
         Pessoa pe = new Pessoa();
 
         System.out.println("Digite o peso da pessoa:");
-        pe.peso = leitor.nextFloat();
+        pe.setPeso(leitor.nextFloat());
         System.out.println("Digite a altura da pessoa:");
-        pe.altura = leitor.nextFloat();
+        pe.setAltura(leitor.nextFloat());
 
-        pe.calcularIMC();
+        System.out.println(pe.calcularIMC());
 
 
 
